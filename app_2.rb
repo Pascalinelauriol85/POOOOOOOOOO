@@ -64,7 +64,8 @@ enemies << player2 = Player.new("Soline")
             puts "Tu dois choisir entre a, s, 1 ou 2"
             gets.chomp
         end
-
+        # on cherche dans le tableau ennemis. Pour chaques joueurs, on regarde les points de vie 
+        #si ils sont supperieur a 0 on peut attaquer sinon on fait rien.
         enemies.each {|item| item.life_points > 0 ? item.attacks(humain_player) : nil}
         gets.chomp
     end
@@ -82,9 +83,5 @@ end
 
 
     
-
-
-
-
 # binding.pry 
 # puts "finnnnnn"
