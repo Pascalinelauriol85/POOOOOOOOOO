@@ -23,8 +23,8 @@ humain_player = HumainPlayer.new(name)
     # la variable enemies est un tableau
 enemies =[]
     # je met les nouveaux joueurs dans un tableau
-enemies << player1 = Player.new("Nathan")
-enemies << player2 = Player.new("Soline")
+enemies << player1 = Player.new("Jojo le tueur")
+enemies << player2 = Player.new("Jacqueline la killeuse")
 
 
 
@@ -78,7 +78,7 @@ enemies << player2 = Player.new("Soline")
       else 
         #affiche si le player humain a perdu
         puts "\033[1;31mLoser ! Tu as perdu !"+"\033[0m"
-end
+    end
 
 
 

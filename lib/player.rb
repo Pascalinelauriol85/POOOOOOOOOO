@@ -15,7 +15,7 @@ class Player
         @life_points = @life_points - damages                   # nombre de point de vie moins la variable de domage
         if @life_points <= 0                                            
           puts "\033[1;31mLe joueur #{@player} est mort(e) !"+"\033[0m"   # couleur sur le texte
-          @life_points = 0
+          @life_points = 0                                                # incrément a 0 life_points
         end
     end
     
@@ -28,7 +28,7 @@ class Player
 
     def compute_damage
         return rand(1..6)                                                   # lancer de dés
-      end
+    end
 
 end
 
